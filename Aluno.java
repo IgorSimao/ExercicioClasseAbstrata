@@ -1,7 +1,4 @@
-/**
- * Aluno
- */
-abstract class Aluno {
+public class Aluno implements InterfaceAluno{
 
     private String nome;
     private int matricula;
@@ -38,5 +35,10 @@ abstract class Aluno {
         this.curso = curso;
     }
 
-    public abstract void matricular();
-}   
+    @Override
+    public void matricular() {
+        System.out.println("Aluno Matriculado!");
+        
+    }
+    
+}
